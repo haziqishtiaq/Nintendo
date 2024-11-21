@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body to use full height of the viewport */
+.home {
+    font-family: 'Arial', sans-serif;
+    background-color: crimson;
+    height: 100vh; /* Make the page take full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header with Nintendo branding */
+.nintendo {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    background-color: crimson; /* Nintendo Red */
+    padding: 20px 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 25px; /* Spacing between characters */
+    margin-top: 40px;
+}
+
+/* List style for navigation links */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* List item (each character's link) */
+nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Links for each character (styled with their own colors) */
+nav a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for links */
+nav a:hover {
+    background-color: #fff;
+    color: crimson; /* Nintendo red */
+    transform: scale(1.1);
+}
+
+/* Mario's color scheme */
+nav li.mario a {
+    background-color: #d83b01; /* Mario red */
+    border-color: #d83b01;
+}
+
+nav li.mario a:hover {
+    background-color: #fff;
+    color: #d83b01; /* Mario red */
+}
+
+/* Luigi's color scheme */
+nav li.luigi a {
+    background-color: #007a33; /* Luigi green */
+    border-color: #007a33;
+}
+
+nav li.luigi a:hover {
+    background-color: #fff;
+    color: #007a33; /* Luigi green */
+}
+
+/* Peach's color scheme */
+nav li.peach a {
+    background-color: #ff99cc; /* Peach pink */
+    border-color: #ff99cc;
+}
+
+nav li.peach a:hover {
+    background-color: #fff;
+    color: #ff99cc; /* Peach pink */
+}
+
+/* Styling for images */
+nav img {
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Image hover effect */
+nav img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+    .nintendo {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the links vertically on smaller screens */
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 20px; /* Add space between characters */
+    }
+
+    nav img {
+        width: 150px; /* Reduce image size on smaller screens */
+    }
+}

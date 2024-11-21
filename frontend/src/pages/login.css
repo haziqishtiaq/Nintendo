@@ -1,0 +1,123 @@
+/* Apply styles to the body of the app */
+.login-page {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+  }
+  
+  /* Wrapper div to control positioning */
+  .login-page div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+  }
+  
+  /* The form container with specific class */
+  .login-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px; /* Set a narrower width */
+    height: 350px; /* Adjusted height to be appropriate for login */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Form hover effect for shadow */
+  .login-form:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style the legend */
+  .login-form legend {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3498db;
+  }
+  
+  /* Style form labels */
+  .login-form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+  }
+  
+  /* Style the input fields */
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  /* Input focus styles */
+  .login-form input[type="text"]:focus,
+  .login-form input[type="password"]:focus {
+    border-color: #3498db;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+    outline: none;
+  }
+  
+  /* Style the submit button */
+  .login-form input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+  }
+  
+  /* Submit button hover effect */
+  .login-form input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+  }
+  
+  /* Style the Home link inside the login form */
+  .login-form a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #3498db;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Home link hover effect */
+  .login-form a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }

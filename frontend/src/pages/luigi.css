@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page background image */
+.luigi {
+    font-family: 'Arial', sans-serif;
+    background-image: url('http://localhost:5000/static/luigi2.jpg'); /* Your Mario image URL here */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Make the background image fixed when scrolling */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    height: 100vh; /* Full viewport height */
+    color: rgb(46, 222, 163); /* Default text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Heading 1 (Name) - Styled to look like Mario */
+.luigi h1 {
+    font-size: 3.5rem;
+    color: #4ebbdc; /* Mario red */
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    z-index: 1; /* Ensures the heading is on top of the background */
+}
+
+/* Heading 2 (Role) - Styled with Mario's theme */
+.luigi h2 {
+    font-size: 2rem;
+    color: #81c14a; /* Mario yellow */
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+    z-index: 1; /* Ensures the heading is on top of the background */
+}
+
+/* Description - Boxed with padding and background */
+.luigi p {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    z-index: 1; /* Ensures the paragraph is on top of the background */
+}
+
+/* Home link styling */
+.luigi a {
+    font-size: 1.2rem;
+    color: #3498db; /* Blue color */
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    z-index: 1; /* Ensures the link is on top of the background */
+}
+
+/* Home link hover effect */
+.luigi a:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+    .luigi h1 {
+        font-size: 2.5rem;
+    }
+
+    .luigi h2 {
+        font-size: 1.8rem;
+    }
+
+    .luigi p {
+        width: 90%;
+    }
+
+    .luigi a {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}

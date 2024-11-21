@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://via.placeholder.com/1200x800'); /* Example background image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Wrapper div to control positioning */
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Take full width */
+  height: 100%; /* Take full height */
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+}
+
+/* The form container */
+form.signup {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 400px; /* Set width of the form */
+  max-width: 90%; /* Ensure it doesn't get too big on small screens */
+}
+
+/* Style the legend */
+form.signup legend {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style form labels */
+form.signup label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Style the input fields */
+form.signup input[type="text"],
+form.signup input[type="password"],
+form.signup input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form.signup input[type="text"]:focus,
+form.signup input[type="password"]:focus,
+form.signup input[type="number"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Style the submit button */
+form.signup input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form.signup input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Style the Home link */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
